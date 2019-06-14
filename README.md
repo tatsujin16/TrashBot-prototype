@@ -5,10 +5,9 @@ Google Homeを使ったゴミ箱の操作
 GoogleHome→ IFTTT→ slack→ ROS→ RaspberryPi→ Arduino
 
 # 環境
-Linux  
-ubuntu16.04  
+Linux ubuntu16.04  
 ROS kinetic  
-RaspberryPi B UbuntuMATE  
+RaspberryPi B  OS:UbuntuMATE  
 
 
 
