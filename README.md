@@ -7,7 +7,7 @@ GoogleHome→ IFTTT→ slack→ ROS→ RaspberryPi→ Arduino
 # 環境
 Linux ubuntu16.04  
 ROS kinetic  
-RaspberryPi B  OS:UbuntuMATE  
+RaspberryPi B  [OS:UbuntuMATE]  
 
 
 
