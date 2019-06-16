@@ -14,6 +14,12 @@ GoogleHome→ IFTTT→ slack→ ROS→ RaspberryPi→ Arduino
 Linux ubuntu16.04  
 ROS kinetic  
 RaspberryPi B  [OS:UbuntuMATE]  
+* 下記のwebページを参考にslackbotライブラリをubuntuにインストール
+* 実行ファイルは、/usr/local/lib/python2.7/dist-packages/slackbotの中のrun.py
+* VIMの保存コマンドは、:w !sudo tee %
+* ubuntuとRaspberryPiはssh接続で、ROSシリアルを使用してデータを送受信
+
+
 
 
 
