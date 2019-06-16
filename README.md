@@ -17,8 +17,10 @@ RaspberryPi B  [OS:UbuntuMATE]
 * Slackアプリで、オリジナルのslackbotを作成
 * IFTTTでMy Appletを作成し、GoogleHomeとslackをIFTTT経由で接続
 * 下記のwebページを参考にPythonのslackbotライブラリをubuntuにインストール
-* 実行ファイルは、/usr/local/lib/python2.7/dist-packages/slackbotの中にrun.pyを作成 (vimの保存コマンドは、:w !sudo tee %)
-* /usr/local/lib/python2.7/dist-packages/slackbotの中にslackbot_settings.pyを作成し、  オリジナルのslackbotのAPIトークンを書き込む
+* 実行ファイルは、/usr/local/lib/python2.7/dist-packages/slackbotの中にrun.pyを作成  
+(vimの保存コマンドは、:w !sudo tee %)
+* /usr/local/lib/python2.7/dist-packages/slackbotの中にslackbot_settings.pyを作成し、  
+オリジナルのslackbotのAPIトークンを書き込む
 * ubuntuとRaspberryPiはssh接続で、rosserial(ROSの通信パッケージ)を使用してロボット側とPC側がデータを送受信
 
 
