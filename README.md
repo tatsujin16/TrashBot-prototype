@@ -14,10 +14,12 @@ GoogleHome→ IFTTT→ slack→ ROS→ RaspberryPi→ Arduino
 Linux ubuntu16.04  
 ROS kinetic  
 RaspberryPi B  [OS:UbuntuMATE]  
-* 下記のwebページを参考にslackbotライブラリをubuntuにインストール
-* 実行ファイルは、/usr/local/lib/python2.7/dist-packages/slackbotの中のrun.py
-* VIMの保存コマンドは、:w !sudo tee %
-* ubuntuとRaspberryPiはssh接続で、ROSシリアルを使用してデータを送受信
+* Slackアプリで、オリジナルのslackbotを作成
+* IFTTTでMy Appletを作成し、GoogleHomeとslackをIFTTT経由で接続
+* 下記のwebページを参考にPythonのslackbotライブラリをubuntuにインストール
+* 実行ファイルは、/usr/local/lib/python2.7/dist-packages/slackbotの中にrun.pyを作成(vimの保存コマンドは、:w !sudo tee %)
+* /usr/local/lib/python2.7/dist-packages/slackbotの中にslackbot_settings.pyを作成し、オリジナルのSlackbotのAPIトークンを書き込む
+* ubuntuとRaspberryPiはssh接続で、rosserial(ROSの通信パッケージ)を使用してロボット側とPC側がデータを送受信
 
 
 
@@ -27,7 +29,10 @@ RaspberryPi B  [OS:UbuntuMATE]
 「ROSではじめるロボットプログラミング」著者:小倉 崇  
 ## 参考webページ
 Qiita「Slackにボットを設置する」(2017年6月10日更新)  
-https://azriton.github.io/2016/12/17/Slack%E3%81%AB%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%99%E3%82%8B/  
+https://azriton.github.io/2016/12/17/Slack%E3%81%AB%E3%83%9C%E3%83%83%E3%83%88%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%99%E3%82%8B/   
+
+Qiita「GoogleHome mini から IFTTT 経由で Slack に投稿してみた件」(2018年2月12日更新)
+https://qiita.com/KSxRDevelop/items/4aff0f1856c0c200c1a0
 
 Azriton's blog「PythonのslackbotライブラリでSlackボットを作る」(2016年12月17日更新)  
 https://qiita.com/sukesuke/items/1ac92251def87357fdf6  
