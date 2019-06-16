@@ -18,10 +18,10 @@ int enB = 5;
 int in3 = 3;
 int in4 = 2;
 int ang_open = 110;
-int ang_close = 10;
+int ang_close = 5;
 volatile boolean tim1msF = false;
 int val;
-int x = 800;
+int x = 900;
 
 void timer1mS(){
   tim1msF = true;
@@ -68,21 +68,21 @@ void STOP(){
 void STRAIGHT(){
   digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
-  analogWrite(enA, 255);
+  analogWrite(enA, 130);
   digitalWrite(in3,HIGH);
   digitalWrite(in4, LOW);
   analogWrite(enB, 255);
-  Timer(10000);
+  Timer(2500);
 }
 
 void BACK(){
   digitalWrite(in1, LOW);
   digitalWrite(in2, HIGH);  
-  analogWrite(enA, 255);
+  analogWrite(enA, 130);
   digitalWrite(in3, LOW);
   digitalWrite(in4, HIGH);
   analogWrite(enB, 255);
-  Timer(9000);
+  Timer(2500);
 }
 
 void RIGHT(){
@@ -90,19 +90,19 @@ void RIGHT(){
   digitalWrite(in2, LOW);
   analogWrite(enA, 255);
   digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  analogWrite(enB, 255);
-  Timer(3000);
+  digitalWrite(in4, LOW);
+  analogWrite(enB, 0);
+  Timer(700);
 }
 
 void LEFT(){
   digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  analogWrite(enA, 255);
+  digitalWrite(in2, LOW);
+  analogWrite(enA, 0);
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
   analogWrite(enB, 255);
-  Timer(3000);
+  Timer(700);
 }
 
 void PRESS(){
@@ -116,4 +116,9 @@ void PRESS(){
       break;
     }
   } 
+}
+
+void Adjust(){
+  nh.spinOnce();
+  Timer(500);
 }
