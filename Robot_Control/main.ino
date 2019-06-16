@@ -1,89 +1,86 @@
 void order1(const std_msgs::Int16 &message){
   const int dustbox = message.data;
-  if (dustbox == 0){
-    CLOSE();
-    nh.spinOnce();
-    Timer(500);
-  }
-  else if (dustbox == 1){
+  Timer(1000);
+  if (dustbox == 1){
     OPEN();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
   }
   else if (dustbox == 2){
-    STRAIGHT(); 
-    STOP();
-    nh.spinOnce();  
-    Timer(500); 
+    CLOSE();
+    Adjust();
   }
   else if (dustbox == 3){
-    BACK();
+    STRAIGHT(); 
     STOP();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
   }
   else if (dustbox == 4){
-    RIGHT();
+    BACK();
     STOP();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
   }
   else if (dustbox == 5){
-    LEFT();
+    RIGHT();
     STOP();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
   }
   else if (dustbox == 6){
-    STRAIGHT();
+    LEFT();
     STOP();
-    nh.spinOnce();
-    Timer(500);
-    OPEN();
-    Timer(500);
+    Adjust();
   }
   else if (dustbox == 7){
-    CLOSE();
-    Timer(500);
-    nh.spinOnce();
-    BACK();
-    STOP();
-    nh.spinOnce();
-    Timer(500);
-  }
-  //タイマーモード
-  else if (dustbox == 8){
     STRAIGHT();
     STOP();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
+    RIGHT();
+    STOP();
+    Adjust();
+    STRAIGHT();
+    STOP();
+    Adjust();
     OPEN();
-    Timer(500);
-    nh.spinOnce();
-    Timer(2000);
-    nh.spinOnce();
+    Adjust();
+  }
+  else if (dustbox == 8){
     CLOSE();
-    Timer(500);
-    nh.spinOnce();
+    Adjust();
     BACK();
     STOP();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
+    LEFT();
+    STOP();
+    Adjust();
+    BACK();
+    STOP();
+    Adjust();
   }
-  //センサーモード
+  //タイマーモード
   else if (dustbox == 9){
     STRAIGHT();
     STOP();
+    Adjust();
     OPEN();
-    Timer(500);
-    nh.spinOnce();
-    PRESS();
-    Timer(500);
-    nh.spinOnce();
+    Timer(1500);
+    Adjust();
+    CLOSE();
+    Adjust();
     BACK();
     STOP();
-    nh.spinOnce();
-    Timer(500);
+    Adjust();
+  }
+  //センサーモード
+  else if (dustbox == 10){
+    STRAIGHT();
+    STOP();
+    Adjust();
+    OPEN();
+    Adjust();
+    PRESS();
+    Adjust();
+    BACK();
+    STOP();
+    Adjust();
   }
 }
 ros::Subscriber<std_msgs::Int16> Dustbox("/TrashBot",&order1);
