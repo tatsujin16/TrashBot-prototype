@@ -1,4 +1,5 @@
 # TrashBot
+![TrashBot](TrashBot_右.jpg)
 ## Google Homeを使ったゴミ箱の操作  
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Yut2F3ufk2o/0.jpg)](http://www.youtube.com/watch?v=Yut2F3ufk2o)  
 ## センサーモード  
