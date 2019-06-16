@@ -2,11 +2,11 @@
 <img src="https://user-images.githubusercontent.com/45473923/59561834-b1c0b480-905f-11e9-84ee-f94e76e47afc.jpg" width=60%>
 <img src="https://user-images.githubusercontent.com/45473923/59561968-42e45b00-9061-11e9-8ad9-93dd3e409b4a.jpg" width=60%>
 
-## Google Homeを使ったゴミ箱の操作  
+## [DemoMovie1] Google Homeを使ったゴミ箱の操作  
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Yut2F3ufk2o/0.jpg)](http://www.youtube.com/watch?v=Yut2F3ufk2o)  
-## センサーモード  
+## [DemoMovie2] センサーモード  
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/jtZj9VkVd58/0.jpg)](http://www.youtube.com/watch?v=jtZj9VkVd58)  
-## Slack操作モード  
+## [DemoMovie3]Slack操作モード  
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mRYCV2uttng/0.jpg)](http://www.youtube.com/watch?v=mRYCV2uttng)  
 ## システム
 GoogleHome→ IFTTT→ slack→ ROS→ RaspberryPi→ Arduino
